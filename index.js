@@ -115,9 +115,9 @@ function startBot() {
 // === RUN ===
 (async () => {
   console.clear();
-  console.log(chalk.cyan.bold("=== PRIVATE BOT AUTO SYNC & LAUNCH ===\n"));
+//  console.log(chalk.cyan.bold("=== PRIVATE BOT AUTO SYNC & LAUNCH ===\n"));
 
-  if (!GITHUB_TOKEN || GITHUB_TOKEN.startsWith("ghp_your_")) {
+  if (!GITHUB_TOKEN) {
     console.error(chalk.red("[❌] Missing or invalid GITHUB_TOKEN!"));
     console.log(chalk.yellow("→ Set it as environment variable before running:"));
     console.log(chalk.magenta("   export GITHUB_TOKEN=your_personal_access_token\n"));
