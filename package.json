@@ -1,40 +1,29 @@
 {
   "name": "bot",
   "version": "1.0.0",
-  "description": "Multi-user WhatsApp bot with Baileys 7.0.0rc9 and Auto GitHub Sync",
+  "description": "Multi-user WhatsApp bot with Baileys 7.0.0rc9",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name bandaheali",
-    "restart": "pm2 restart x-kira",
-    "stop": "pm2 stop bandaheali",
-    "delete": "pm2 delete bandaheali",
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "pm2 start index.js --deep-monitoring --attach --name Sarkar",
+    "restart": "pm2 restart Sarkar",
+    "stop": "pm2 stop Sarkar",
+    "delete": "pm2 delete Sarkar"
   },
   "keywords": [
     "bot",
-    "baileys",
-    "whatsapp",
-    "multi-device",
-    "auto-deploy",
-    "github"
+    "baileys"
   ],
   "author": "",
   "license": "ISC",
-  "engines": {
-    "node": ">=18.x"
-  },
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@google/genai": "^1.30.0",
     "@hapi/boom": "^10.0.1",
-    "@whiskeysockets/baileys": "^7.0.0-rc.9",
-    "anime-quiz": "^3.0.0",
-    "aptoide-api": "^4.0.7",
+    "@whiskeysockets/baileys": "^7.0.0-rc.6",
     "async-mutex": "^0.5.0",
     "axios": "^1.13.2",
-    "baileys": "7.0.0-rc.9",
+    "baileys": "7.0.0-rc.6",
     "browser-id3-writer": "^6.3.1",
     "chalk": "^5.6.2",
     "cheerio": "^1.1.2",
@@ -54,10 +43,10 @@
     "jimp": "^1.6.0",
     "moment-timezone": "^0.6.0",
     "mongoose": "^9.0.0",
-    "mongodb": "^7.0.0",
     "node-cache": "^5.1.2",
     "node-fetch": "^3.3.2",
     "node-id3": "^0.2.9",
+    "node-telegram-bot-api": "^0.66.0",
     "node-webpmux": "^3.2.1",
     "pg": "^8.16.3",
     "pino": "^10.1.0",
@@ -68,18 +57,7 @@
     "sequelize": "^6.37.7",
     "sharp": "^0.34.5",
     "sqlite3": "^5.1.7",
-    "tar": "^6.1.11",
     "webp-converter": "^2.3.3",
-    "yt-search": "latest",
-    "yt-streamer": "^6.7.23",
-    "@octokit/rest": "^20.0.2",
-    "adm-zip": "^0.5.10",
-    "denethdev-ytmp3": "1.0.3",
-    "fs": "0.0.1-security",
-    "path": "^0.12.7",
-    "qrcode": "latest",
-    "qrcode-reader": "^1.0.4",
-    "qrcode-terminal": "^0.12.0",
-    "ruhend-scraper": "9.0.1"
+    "yt-search": "latest"
   }
 }
